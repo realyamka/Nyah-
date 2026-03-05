@@ -1,73 +1,23 @@
+-- Example manifest for Nyah! UI
 return {
-
-Theme = {
-
-AccentColor = Color3.fromRGB(0,170,255)
-
-},
-
-Categories = {
-
-{
-Title = "Main",
-
-Sections = {
-
-{
-Title = "Player",
-
-Entries = {
-
-{
-Type = "Button",
-Title = "Print Hello",
-Callback = function()
-print("Hello from manifest")
-end
-},
-
-{
-Type = "Button",
-Title = "Print Player",
-Callback = function()
-print(game.Players.LocalPlayer.Name)
-end
-}
-
-}
-
-}
-
-}
-
-},
-
-{
-Title = "Visuals",
-
-Sections = {
-
-{
-Title = "ESP",
-
-Entries = {
-
-{
-Type = "Button",
-Title = "Enable ESP",
-Callback = function()
-print("ESP Enabled")
-end
-}
-
-}
-
-}
-
-}
-
-}
-
-}
-
+    title = "Nyah! UI Example",
+    theme = "dark",
+    buttons = {
+        {
+            text = "Click Me",
+            action = function()
+                print("Button clicked!")
+            end
+        },
+        {
+            text = "Another Button",
+            action = function()
+                print("Another button pressed!")
+            end
+        }
+    },
+    labels = {
+        "Welcome to Nyah! UI",
+        "Enjoy your stay!"
+    }
 }
